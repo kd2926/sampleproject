@@ -1,3 +1,15 @@
+#Purpose - To read user_data.csv, readings.json file, merge the datasets, output the results to a folder in csv format
+#Created on - 6/5/2018
+#Created By - Kanya Daivam
+#Main logic of the application
+
+#### NOTE: Given problem can be solved in multiple ways - using data frames alone, loading data to tables in Postgres or MySQL. 
+### Here i used a memory table in sqlite as the data is fairly less. I would prefer to create a table in MySQL database to load data.
+### date-wise and aggregate the tables.
+### time complexity is to be evaluated based on the input size. 
+### bad records are not tested for in the logic below.  
+
+# imported needed packages
 from pandas.io.json import json_normalize
 import pandas as pd
 import json
