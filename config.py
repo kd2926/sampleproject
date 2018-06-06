@@ -1,5 +1,6 @@
 # /usr/bin/env python
 #config.py
+# class to hold all the config variables. It can also be made as .conf file or .json file
 import time
 import logging
 
